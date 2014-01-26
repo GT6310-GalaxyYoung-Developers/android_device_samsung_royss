@@ -29,4 +29,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/royss/rootdir/init-cwm.rle:root/GT-S6310.rle
 endif
 
-#$(call inherit-product, vendor/samsung/royss/blobs.mk)
+$(call inherit-product, vendor/samsung/royss/blobs.mk)
