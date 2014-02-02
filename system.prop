@@ -51,3 +51,9 @@ dalvik.vm.checkjni=0
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
 dalvik.vm.execution-mode=int:jit
+
+##Addons
+ro.carrier=unknown
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.adb.qemud=1
