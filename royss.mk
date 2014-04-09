@@ -19,10 +19,21 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/royss/overlay
 
 include device/samsung/msm7x27a-common/msm7x27a.mk
 
+## NFC
+#PRODUCT_PACKAGES += \
+#    libnfc \
+#    libnfc_jni \
+#    Nfc \
+#    Tag
+
+## NFC permissions
+#PRODUCT_COPY_FILES += \
+#    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
+
 ifndef BUILD_RECOVERY
 ## Splash screen
 PRODUCT_COPY_FILES += \
-    device/samsung/royss/rootdir/init.rle:root/GT-S6310.rle
+    device/samsung/royss/rootdir/init.rle:root/initlogo.rle
 else
 ## Recovery splash screen
 PRODUCT_COPY_FILES += \
